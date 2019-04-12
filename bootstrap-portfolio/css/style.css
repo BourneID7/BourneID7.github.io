@@ -1,0 +1,62 @@
+
+body {
+    background: url(../images/car-bkgd.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.containerBkgd {
+    background-color: #fff;
+    opacity: 0.95;
+}
+h1 {
+    margin-top: 20px;
+    color: #17A2B8;
+}
+.imgBox {
+    max-height: 300px;
+    overflow: hidden;
+}
+footer p {
+    color: #fff;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 10px;
+}
+.bottom {
+    margin-bottom: 20px;
+}
+/* change width property from default bootstrap style 100% to fix thumbnailLabel popping out of image width on screen size max 800px" */
+.col-md-3 {
+    position: relative;
+    width: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.thumbnailLabel {
+    background-color: #17A2B8;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    position: relative;
+    bottom: 3.5rem;
+    z-index: 50;
+}
+.thumbnailLabel a {
+    text-decoration: none;
+}
+.thumbnailLabel:hover {
+    text-decoration-line: none;
+    background-color: #;
+}
+
+
+/* Use a media query to add a breakpoint at 640px: */
+@media screen and (max-width: 800px) {
+    .imgBottom {
+        margin-bottom: 10px;
+    }
+}
