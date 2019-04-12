@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #fff;
+    background: url("../images/car-bkgd2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 100%;
+}
+#navBkgd {
+    background-color: #fff;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: #ccc 3px solid;
+    top: 0;
+    z-index: 100;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: auto;
+    position: relative;
+    display: block;
+    top: 0;
+}
+h1 {
+    background-color: #480b64;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    padding: 24px 20px 5px 20px;
+    width: auto;
+    float: left;    
+}
+nav {
+    margin-top: 42px;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+}
+.nav li a {
+    text-decoration-line: none
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    color: #480b64;
+}
+/* Hide the link that should open and close the topnav on small screens */
+
+.icon {
+    position: relative;
+    float: right;
+    font-size: 1.3rem;
+    color: #666;
+    visibility: hidden;
+    display: none;
+    padding-right: 20px;
+    bottom: 5px;
+}
+.icon a {
+    text-decoration-line: none;
+}
+
+#navVert {
+    display: none;
+    visibility: hidden;
+    background-color: #480b64;
+    width: 100px;
+    margin-top: 22px;
+}
+#navVert li {
+    list-style: none;
+    padding: 10px 15px;
+    border-bottom: #ccc 1px solid;
+}
+#navVert li a {
+    color: #fff;
+    text-decoration-line: none
+}
+#navVert li:hover {
+    background-color: #666;
+}
+/* main styles */
+main {
+    position: relative;
+    margin-top: 84px;
+    background-color: #fff;
+    opacity: 0.95;
+    padding: 40px;
+    height: auto;
+    clear: both;
+    /*margin-bottom: 30px;*/
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #480b64;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: #ccc 1px solid;
+    display: block;
+}  
+p {
+    line-height: 160%;
+    padding-bottom: 20px;
+}
+p:last-child {
+    padding-bottom: 0;
+}
+.imgBox {
+    float: left;
+    margin-right: 20px;
+    max-width: 29%;
+    max-height: 250px;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.copywrite {
+    color: #fff;
+    font-size: 70%;
+    text-align: center;
+    padding: 10px;
+}
+#footerBkgd {
+    background-color: #666;
+    border-top: #480b64 8px solid;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    display: block;
+    bottom: 0;
+}
+/* form styles */
+input {
+    font-size: 100%;
+    width: 100%;
+}
+textarea {
+    font-size: 100%;
+    width: 100%;
+}
+.formField {
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+.formLabel {
+    padding-bottom: 5px;
+}
+.btn {
+    background-color: #480b64;
+    font-size: 110%;
+    text-align: center;
+    color: #fff; 
+    padding: 10px 20px;
+}
+.btn:hover {
+    background-color: #666;
+}
+/* portfolio styles */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.thumbnailLabel {
+    background-color: #480b64;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    position: relative;
+    bottom: 3.5rem;
+    z-index: 50;
+}
+.thumbnailLabel a {
+    text-decoration-line: none;
+}
+/* media queries */
+@media screen and (max-width: 980px) {
+    .container {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        position: static;
+    }
+    .nav {
+        visibility: hidden;
+        display: none;
+    }
+    main {
+        padding: 20px;
+    }
+    .icon {
+        visibility: visible;
+        display: block;
+    }
+    nav:hover #navVert {
+        visibility: visible;
+        display: block;
+    }
+    .imgBox {
+        float: none;
+        clear: both;
+        max-width: 100%;
+        max-height: 300px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .img-profile {
+        position: relative;
+        width: 100%;
+        top: -80px;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+}
