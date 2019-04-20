@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/harry-potter_header11.png" alt="Harry Potter Hangman" />
+            <h1 class="resetHidden">Harry Potter Hangman</h1>
+        </header>
+        <main class="clearfix">
+            <!-- image column -->
+            <div class="col-md-4">
+                <img id="man" class="hangmanImg">
+            </div>
+            <!-- game text column -->
+            <div class="col-md-8">
+                <div class="clearfix">
+                    <p>
+                        <button id="startBtn" class="btn">Start Game</button>
+                    </p>
+                    <p>Use letter keys to choose your guess.</p>
+                
+                    <h2>Current word</h2>
+                    <p id="blanks" class="letters"></p>
+                    <p>Wins: <span id="totalWins"></span></p>
+                    <p>Losses: <span id="totalLosses"</p>
+                    <p>Number of incorrect guesses remaining: <span id="remGuesses"></span></p>
+                    <p>Letters already guessed:</p>
+                    <p id="guessedLetters"></p>
+                    <p id="winMessage" class="gameMessage"></p>
+                    <p id="lossMessage" class="gameMessage"></p>
+                </div>
+                <div id="gameReset" class="resetHidden">
+                    <button id="playAgain" class="btn">Play Again</button>
+                </div>
+            </div>
+        </main>
+        <footer class="clearfix">
+            <p>&copy; Images copyright Harry Potter</p>
+        </footer>
+
+
+    </div><!-- end container -->
+    <!-- javascript link -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
