@@ -1,0 +1,48 @@
+body {
+    background-color: #fff;
+    background: url("../images/46130649-gem-wallpapers.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container {
+    background-color: white;
+}
+main {
+    padding: 30px 0;
+}
+.colPad {
+    padding: 30px;
+}
+.blueBg {
+    background-color: #007bff;
+    color: white;
+}
+h1, h3 {
+    text-align: center;
+}
+h1 {
+    padding-top: 20px;
+}
+h4 {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+.marginBottom {
+    margin-bottom: 30px;
+}
+.center {
+    text-align: center;
+}
+.borderRight {
+    border-right: #666 solid 1px;
+}
+.hidden {
+    visibility: hidden;
+}
+.marginRight {
+    margin-right: 20px;
+    float: left;
+}

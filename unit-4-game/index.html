@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Crystal Counting Game</title>
+</head>
+<body>
+    <div class="container">
+        <header class="row blueBg">
+            <div class="col-md-12">
+                <h1>Crystals Collector!</h1>
+            </div>
+        </header>
+
+        <main class="row">
+            <div class="col-md-6 colPad borderRight">
+                <h3>Rules</h3>
+                <p>At the start of each game you'll be given a random number to match.</p>
+                <p>Each of the four crystals on the right has a mystery value between 1 and 12. Click a crystal to add it's value to your score.</p>
+                <p>If you match the value of the random number without going over, you win.</p>
+                <p>If you go over the random number you lose.</p>
+                <p>Each time you play the crystals will have new mystery values.</p>
+            </div> <!-- end of left column -->
+            <div class="col-md-6 colPad">
+                <!--<p class="center">Press any key to start the game.</p>-->
+                <h3 id="matchNumber" class="center"></h3>
+                <h5 class="center">Your score is:</h5>
+                <h5 id="yourScore" class="center"></h5>
+                <div class="row blueBg marginBottom">
+                    <h4>Click a crystal!</h4>
+                </div>
+
+                <div class="row align-items-center marginBottom">
+                    <div class="col">
+                        <button id="sapphireBtn" class="crystal"><img class="img-fluid" src="assets/images/sapphire.png"></button>
+                    </div>
+                    <div class="col">
+                        <button id="rubyBtn" class="crystal"><img class="img-fluid" src="assets/images/ruby.png"></button>
+                    </div>
+                    <div class="col">
+                        <button id="diamondBtn" class="crystal"><img class="img-fluid" src="assets/images/diamond.png"></button>
+                    </div>
+                    <div class="col">
+                        <button id="amethystBtn" class="crystal"><img class="img-fluid" src="assets/images/amethyst.png"></button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <p id="winMessage"></p>
+                    <p id="lossMessage"></p>
+                </div>
+                <div class="row align-items-center">
+                    <h5>Wins: <span id="winsTotal"></span></h5>
+                </div>
+                <div class="row align-items-center">
+                    <h5>Losses: <span id="lossTotal"></span></h5>
+                </div>
+                <div id="resetButtons" class="row align-items-center">
+                    <button type="button" id="reset" class="btn btn-primary marginRight">Play Again</button>
+                    <button type="button" id="quit" class="btn btn-primary marginRight">Quit</button>
+                </div>
+
+
+            </div> <!-- end of right column --> 
+        </main>
+    </div> <!-- end container -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>  
+</body>
+</html>
