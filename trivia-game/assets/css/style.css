@@ -1,0 +1,118 @@
+html, body {
+    min-height: 100%;
+}
+.header {
+    background-image:url("../images/header.jpg");
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    padding: 0;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+}
+.container {
+    padding: 0 30px;
+    margin-top: 0;
+}
+h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    padding-top: 150px;
+}
+#startScreen {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.startRow{
+    position: relative;
+}
+.startBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.timer {
+    width: 100%;
+    display: block;
+    height: 70px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#start {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hidden {
+    visibility: hidden;
+}
+.show {
+    display: block;
+    visibility: visible;
+}
+.correct {
+    margin-top: 20px;
+}
+.message {
+    color: red;
+}
+.footer {
+    background-image:url("../images/footer.jpg");
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    max-width: 100%;
+    height: 130px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+}
+.copyright {
+    font-size: 70%;
+    color: #fff;
+    padding: 3rem; 
+    text-align: center;
+}
+@media only screen and (max-width : 640px) {
+   .footer { 
+        height: 50px;
+        background-size: cover;
+        background-position: center; 
+    }
+    .header {
+        height: 100px;
+        background-size: cover;
+        background-position: center; 
+    }
+    h1 {
+        padding-top: 70px;
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .copyright {
+        padding: 1rem;
+    }
+    .timer {
+        padding-top: 5px;
+        height: auto;
+    }
+    .imageMobile {
+        height: 130px;
+        overflow: hidden;
+    }
+    p, .form-check-label {
+        font-size: 90%;
+    }
+  }
