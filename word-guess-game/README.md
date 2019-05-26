@@ -1,8 +1,6 @@
 # word-guess-game
 
-Press the "Start Game" button to load a new word.
-
-Then use the keyboard to make your letter guesses.
+Game starts when you press any letter key to make your first guess.
 
 Correct letter guesses will replace the blanks in the word.
 
